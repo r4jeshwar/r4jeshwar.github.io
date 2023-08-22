@@ -1,0 +1,170 @@
+.mainSection {
+  position: relative;
+  background-position: center;
+  background-image: url("../images/1689672889573.JPEG");
+  height: 54vmax;
+  background-size: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d6d1d1;
+  overflow: hidden;
+}
+
+.mainSection .textSection {
+  margin-top: 50px;
+}
+
+.mainSection .name, .mainSection .role, .mainSection .moreButton {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  position: relative;
+  /* Ensure the z-index applies to the .name element */
+  z-index: 2;
+  /* Place .name element above the pseudo-element */
+  font-family: monospace;
+}
+
+.mainSection .role {
+  font-size: x-large;
+}
+
+.mainSection .moreButton {
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+
+.mainSection .gitImage {
+  color: white;
+  font-size: 4rem;
+  position: relative;
+  z-index: 2;
+  width: 5%;
+}
+
+/* Add a pseudo-element ::before to create the shading effect */
+.mainSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.863);
+  z-index: 1;
+  /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
+}
+
+.subSection .profileHeading {
+  margin-top: 3rem;
+}
+
+.subSection .postImg {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.subSection .profilePara {
+  color: #585858;
+}
+
+.subSection .imageCol {
+  padding: 40px 85px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .mainSection {
+    background-size: 330px 190px;
+  }
+  .mainSection .name, .mainSection .role, .mainSection .moreButton {
+    font-size: 5px;
+  }
+  .mainSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.863);
+    z-index: 1;
+    /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
+  }
+  .subSection .imageCol {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .mainSection {
+    background-size: 450px 290px;
+  }
+  .mainSection .name, .mainSection .role, .mainSection .moreButton {
+    font-size: 10px;
+  }
+  .mainSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.863);
+    z-index: 1;
+    /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
+  }
+  .subSection .imageCol {
+    padding: 25px 13px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .mainSection {
+    background-size: 560px;
+  }
+  .mainSection .name, .mainSection .role, .mainSection .moreButton {
+    font-size: 14px;
+  }
+  .mainSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.863);
+    z-index: 1;
+    /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
+  }
+  .subSection .imageCol {
+    padding: 25px 13px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1200px) {
+  .mainSection {
+    background-size: 800px;
+  }
+  .mainSection .name, .mainSection .role, .mainSection .moreButton {
+    font-size: 20px;
+  }
+  .mainSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.863);
+    z-index: 1;
+    /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
+  }
+}
+/*# sourceMappingURL=style.css.map */
