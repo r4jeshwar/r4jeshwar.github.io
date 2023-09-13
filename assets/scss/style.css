@@ -4,34 +4,51 @@
   background-image: url("../images/1689672889573.JPEG");
   width: 100vw;
   height: 100vh;
-  background-size: auto 100%;
+  background-size: auto 130%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(214, 209, 209);
   overflow: hidden;
+  font-family: "Lato", sans-serif;
   padding-bottom: 50px;
 }
 .mainSection .textSection {
   margin-top: 447px;
 }
-.mainSection .name, .mainSection .moreButton, .mainSection .role {
+.mainSection .name {
   text-align: center;
   color: white;
-  font-size: 4rem;
-  font-style: italic;
+  font-weight: 600;
+  word-spacing: 10px;
+  font-size: 3rem;
   position: relative; /* Ensure the z-index applies to the .name element */
   z-index: 2; /* Place .name element above the pseudo-element */
-  font-family: monospace;
+  margin-bottom: 15px;
 }
 .mainSection .role {
-  font-size: x-large;
+  text-align: center;
+  color: white;
+  font-family: "Lato";
+  font-size: smaller;
   max-width: 632px;
   margin: auto;
+  position: relative; /* Ensure the z-index applies to the .name element */
+  z-index: 2; /* Place .name element above the pseudo-element */
+  margin-bottom: 15px;
 }
 .mainSection .moreButton {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  position: relative; /* Ensure the z-index applies to the .name element */
+  z-index: 2; /* Place .name element above the pseudo-element */
+  margin-bottom: 15px;
   background-color: transparent;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  padding: 10px 20px;
+  border-radius: 0%;
+  border-width: 2px;
 }
 .mainSection .gitImage {
   color: white;
@@ -50,6 +67,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(5, 5, 5, 0.863);
+  font-family: "Lato", sans-serif;
   z-index: 1; /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
 }
 
@@ -74,13 +92,13 @@
     background-size: auto 100%;
   }
   .mainSection .textSection {
-    margin-top: 237px;
+    margin-top: 311px;
   }
   .mainSection .role {
     max-width: 233px;
   }
-  .mainSection .name, .mainSection .role, .mainSection .moreButton {
-    font-size: 5px;
+  .mainSection .name {
+    font-size: 22px;
   }
   .mainSection::before {
     content: "";
@@ -103,10 +121,10 @@
     background-size: auto 100%;
   }
   .mainSection .textSection {
-    margin-top: 237px;
+    margin-top: 337px;
   }
-  .mainSection .name, .mainSection .role, .mainSection .moreButton {
-    font-size: 10px;
+  .mainSection .name {
+    font-size: 25px;
   }
   .mainSection .role {
     max-width: 333px;
@@ -125,6 +143,11 @@
     padding: 25px 13px;
   }
 }
+.boldy {
+  font-weight: bold;
+  color: black;
+}
+
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   .mainSection {
     width: 100vw;
@@ -132,13 +155,13 @@
     background-size: auto 100%;
   }
   .mainSection .textSection {
-    margin-top: 280px;
+    margin-top: 400px;
   }
   .mainSection .role {
     max-width: 581px;
   }
-  .mainSection .name, .mainSection .role, .mainSection .moreButton {
-    font-size: 14px;
+  .mainSection .name {
+    font-size: 34px;
   }
   .mainSection::before {
     content: "";
@@ -159,9 +182,6 @@
     width: 100vw;
     height: 100vh;
     background-size: auto 100%;
-  }
-  .mainSection .name, .mainSection .role, .mainSection .moreButton {
-    font-size: 20px;
   }
   .mainSection::before {
     content: "";
