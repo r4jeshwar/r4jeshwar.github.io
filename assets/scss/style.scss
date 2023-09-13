@@ -4,15 +4,23 @@
   background-image: url('../images/1689672889573.JPEG');
   width: 100vw;
   height: 100vh;
+<<<<<<< HEAD
   background-size: auto 130%;
+=======
+  background-size: auto 100%;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(214, 209, 209);
   overflow: hidden;
+<<<<<<< HEAD
   font-family: 'Lato', sans-serif;
   padding-bottom: 50px;
   
+=======
+  padding-bottom: 50px;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
 
   .textSection {
     margin-top: 447px;
@@ -20,14 +28,20 @@
   .name {
     text-align: center;
     color: white;
+<<<<<<< HEAD
     font-weight:600;
     word-spacing: 10px;
     font-size: 3rem;
+=======
+    font-size: 4rem;
+   font-style: italic;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
     position: relative; /* Ensure the z-index applies to the .name element */
     z-index: 2; /* Place .name element above the pseudo-element */
     margin-bottom: 15px;
   }
   .role {
+<<<<<<< HEAD
     text-align: center;
     color: white;
     font-family: "Lato";
@@ -38,6 +52,12 @@
     z-index: 2; /* Place .name element above the pseudo-element */
     margin-bottom: 15px;
 
+=======
+    @extend .name;
+    font-size: x-large;
+    max-width: 632px;
+    margin: auto;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
   }
   .moreButton {
     text-align: center;
@@ -97,13 +117,21 @@
     background-size: auto 100%;
 
     .textSection {
+<<<<<<< HEAD
       margin-top: 311px;
+=======
+      margin-top: 237px;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
     }
     .role {
       max-width: 233px;
     }
         .name {
+<<<<<<< HEAD
       font-size: 22px;
+=======
+      font-size: 5px;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
     }
   }
   .mainSection::before {
@@ -128,10 +156,17 @@
     height: 100vh;
     background-size: auto 100%;
     .textSection {
+<<<<<<< HEAD
       margin-top: 337px;
+=======
+      margin-top: 237px;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
     }
     .name {
       font-size: 25px;
+    }
+    .role {
+      max-width: 333px;
     }
     .role {
       max-width: 333px;
@@ -163,13 +198,21 @@
     height: 100vh;
     background-size: auto 100%;
     .textSection {
+<<<<<<< HEAD
       margin-top: 400px;
+=======
+      margin-top: 280px;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
     }
     .role {
       max-width: 581px;
     }
         .name {
+<<<<<<< HEAD
       font-size: 34px;
+=======
+      font-size: 14px;
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
     }
   }
   .mainSection::before {
@@ -193,6 +236,13 @@
     width: 100vw;
     height: 100vh;
     background-size: auto 100%;
+<<<<<<< HEAD
+=======
+
+        .name {
+      font-size: 20px;
+    }
+>>>>>>> 0aebdef50035065c95b6a38045598ec40b0cf296
   }
   .mainSection::before {
     content: '';
