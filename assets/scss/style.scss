@@ -2,21 +2,24 @@
   position: relative;
   background-position: center;
   background-image: url('../images/1689672889573.JPEG');
-  height: 54vmax;
-  background-size: 120%;
+  width: 100vw;
+  height: 100vh;
+  background-size: auto 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(214, 209, 209);
   overflow: hidden;
+  padding-bottom: 50px;
 
   .textSection {
-    margin-top: 50px;
+    margin-top: 447px;
   }
   .name {
     text-align: center;
     color: white;
     font-size: 4rem;
+   font-style: italic;
     position: relative; /* Ensure the z-index applies to the .name element */
     z-index: 2; /* Place .name element above the pseudo-element */
     font-family: monospace;
@@ -24,6 +27,8 @@
   .role {
     @extend .name;
     font-size: x-large;
+    max-width: 632px;
+    margin: auto;
   }
   .moreButton {
     @extend .name;
@@ -69,8 +74,17 @@
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .mainSection {
-    background-size: 330px 190px;
-    .name {
+    width: 100vw;
+    height: 100vh;
+    background-size: auto 100%;
+
+    .textSection {
+      margin-top: 237px;
+    }
+    .role {
+      max-width: 233px;
+    }
+        .name {
       font-size: 5px;
     }
   }
@@ -92,9 +106,17 @@
 }
 @media only screen and (min-width: 376px) and (max-width: 425px) {
   .mainSection {
-    background-size: 450px 290px;
+    width: 100vw;
+    height: 100vh;
+    background-size: auto 100%;
+    .textSection {
+      margin-top: 237px;
+    }
     .name {
       font-size: 10px;
+    }
+    .role {
+      max-width: 333px;
     }
   }
   .mainSection::before {
@@ -115,8 +137,16 @@
 }
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   .mainSection {
-    background-size: 560px;
-    .name {
+    width: 100vw;
+    height: 100vh;
+    background-size: auto 100%;
+    .textSection {
+      margin-top: 280px;
+    }
+    .role {
+      max-width: 581px;
+    }
+        .name {
       font-size: 14px;
     }
   }
@@ -138,8 +168,11 @@
 }
 @media only screen and (min-width: 770px) and (max-width: 1200px) {
   .mainSection {
-    background-size: 800px;
-    .name {
+    width: 100vw;
+    height: 100vh;
+    background-size: auto 100%;
+
+        .name {
       font-size: 20px;
     }
   }
