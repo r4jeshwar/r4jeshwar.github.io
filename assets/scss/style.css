@@ -75,7 +75,7 @@
   margin-top: 3rem;
 }
 .subSection .postImg {
-  width: 100%;
+  width: 90%;
   border-radius: 15px;
 }
 .subSection .profilePara {
@@ -182,6 +182,26 @@
     width: 100vw;
     height: 100vh;
     background-size: auto 100%;
+  }
+  .mainSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.863);
+    z-index: 1; /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .mainSection {
+    width: 100vw;
+    height: 100vh;
+    background-size: auto 100%;
+  }
+  .mainSection .role {
+    font-size: larger;
   }
   .mainSection::before {
     content: "";
