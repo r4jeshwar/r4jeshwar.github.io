@@ -1,62 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.boldy {
+  font-weight: bold;
+  color: #585858;
+  letter-spacing: 2px;
+}
+
 .mainSection {
   position: relative;
   background-position: center;
   background-image: url('../images/1689672889573.JPEG');
+  background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-size: auto 130%;
+  // background-size: auto 130%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(214, 209, 209);
-  overflow: hidden;
-  font-family: 'Lato', sans-serif;
-  padding-bottom: 50px;
-  
+  // background-color: rgb(214, 209, 209);
+  // overflow: hidden;
+  // padding-bottom: 50px;
+
   .textSection {
-    margin-top: 447px;
+    // margin-top: 447px;
+    color: white;
+    transform: translateY(60%);
+    z-index: 2;
   }
   .name {
     text-align: center;
     color: white;
-    font-weight:600;
-    word-spacing: 10px;
-    font-size: 3rem;
+    font-size: 5rem;
     position: relative; /* Ensure the z-index applies to the .name element */
     z-index: 2; /* Place .name element above the pseudo-element */
     margin-bottom: 15px;
+    letter-spacing: 10px;
   }
   .role {
     text-align: center;
-    color: white;
-    font-family: "Lato";
-    font-size:smaller;
-    max-width: 632px;
-    margin: auto;
+    color: rgb(184, 184, 184);
+    letter-spacing: 5px;
+    // font-size: smaller;
+    // max-width: 632px;
+    // margin: auto;
     position: relative; /* Ensure the z-index applies to the .name element */
     z-index: 2; /* Place .name element above the pseudo-element */
-    margin-bottom: 15px;
-
+    // margin-bottom: 15px;
+    font-size: 1.5rem;
   }
   .moreButton {
-    text-align: center;
+    // text-align: center;
     color: white;
-    font-weight:600;
+    font-weight: 600;
     position: relative; /* Ensure the z-index applies to the .name element */
     z-index: 2; /* Place .name element above the pseudo-element */
-    margin-bottom: 15px;
+    margin-block: 15px;
     background-color: transparent;
-    font-size: 0.7rem;
-    padding:10px 20px;
+    font-size: 1rem;
+    padding: 15px 20px;
     border-radius: 0%;
-    border-width:2px;
+    letter-spacing: 3px;
+    border: 2px solid white;
   }
   .gitImage {
-    color: white;
-    font-size: 4rem;
+    // color: white;
+    // font-size: 5rem;
     position: relative;
     z-index: 2;
-    width: 5%;
+    // width: 5%;
+    width: 40px;
+    margin-right: 20px;
   }
 }
 
@@ -69,23 +89,38 @@
   width: 100%;
   height: 100%;
   background-color: rgba(5, 5, 5, 0.863);
-  font-family: 'Lato', sans-serif;
   z-index: 1; /* Ensure the pseudo-element is behind the .name element (default z-index is 0) */
 }
 
 .subSection {
+  padding: 40px;
   .profileHeading {
-    margin-top: 3rem;
+    // margin-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .imageCol {
+    padding: 40px 85px;
+  }
+  .intro {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .sectionHeading {
+    font-size: 45px;
+    font-weight: 700;
   }
   .postImg {
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
   }
   .profilePara {
     color: #585858;
+    font-size: 1.2rem;
   }
-  .imageCol {
-    padding: 40px 85px;
+  .posts {
+    margin: auto 7rem;
   }
 }
 
@@ -101,7 +136,7 @@
     .role {
       max-width: 233px;
     }
-        .name {
+    .name {
       font-size: 22px;
     }
   }
@@ -152,10 +187,7 @@
     }
   }
 }
-.boldy{
-  font-weight: bold;
-  color: black;
-}
+
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   .mainSection {
     width: 100vw;
@@ -167,7 +199,7 @@
     .role {
       max-width: 581px;
     }
-        .name {
+    .name {
       font-size: 34px;
     }
   }
@@ -209,8 +241,8 @@
     width: 100vw;
     height: 100vh;
     background-size: auto 100%;
-    .role{
-        font-size: larger;
+    .role {
+      font-size: larger;
     }
   }
   .mainSection::before {
