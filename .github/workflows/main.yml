@@ -12,7 +12,7 @@ jobs:
     - name: OWASP ZAP Full Scan
       uses: zaproxy/action-baseline@v0.6.1
       with:
-        target: "https://rajeshwar.cloud"
+        target: "https://stafftravel.globalxair.com"
         allow_issue_writing: 'false'
         artifact_name: 'test_zapscan'
           
