@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:     
     - name: OWASP ZAP Full Scan
-      uses: zaproxy/action-full-scan@v0.1.0
+      uses: zaproxy/action-baseline@v0.6.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        docker_name: 'owasp/zap2docker-stable'
         target: "https://rajeshwar.cloud"
         rules_file_name: '.zap/rules.tsv'
         cmd_options: '-a'
