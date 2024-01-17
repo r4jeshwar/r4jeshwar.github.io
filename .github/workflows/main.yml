@@ -12,4 +12,7 @@ jobs:
     - name: OWASP ZAP Full Scan
       uses: zaproxy/action-full-scan@v0.1.0
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         target: "https://rajeshwar.cloud"
+        rules_file_name: '.zap/rules.tsv'
+        cmd_options: '-a'
