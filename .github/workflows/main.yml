@@ -36,5 +36,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://rajeshwar.cloud'
-          rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a'
+        #  rules_file_name: '.zap/rules.tsv'
+        #  cmd_options: '-a'
