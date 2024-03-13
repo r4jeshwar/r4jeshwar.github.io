@@ -35,6 +35,6 @@ jobs:
         uses: zaproxy/action-baseline@v0.11.0
         with:
           token: ${{ secrets.GIT_TOKEN }}
-          target: 'https://rajeshwar.cloud'
+          target: 'https://hypnos.globalxair.com'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
