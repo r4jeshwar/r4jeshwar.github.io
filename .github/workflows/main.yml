@@ -48,6 +48,13 @@ jobs:
         run: |
           echo "CRITICAL vulnerabilities found."
           exit 1
+
+      - name: Upload trivy report as a Github artifact
+        if: steps.trivy-scan.outcome == 'success' || steps.trivy-scan.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-report
+          path: trivy-report.html
           
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.11.0
